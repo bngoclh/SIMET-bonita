@@ -64,7 +64,7 @@ public class Payment {
     }
 
     public void setEmail(String email) {
-        this.email = email;A
+        this.email = email;
     }
 
     public String getModePaiement() {

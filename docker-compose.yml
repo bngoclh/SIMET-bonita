@@ -1,23 +1,23 @@
-# version: '3.8'
+version: '3.8'
 
-# services:
-#   mongo:
-#     image: mongo:4.4
-#     container_name: mongo
-#     ports:
-#       - 27017:27017
-#     volumes:
-#       - mongo-data:/data/db
+services:
+  mongo:
+    image: mongo:4.4
+    container_name: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-data:/data/db
 
-#   payment-service:
-#     build: .
-#     container_name: payment-service
-#     ports:
-#       - 8080:8080
-#     depends_on:
-#       - mongo
-#     environment:
-#       - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/paymentdb
+  payment-service:
+    build: .
+    container_name: payment-service
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/paymentdb
 
-# volumes:
-#   mongo-data:
+volumes:
+  mongo-data:

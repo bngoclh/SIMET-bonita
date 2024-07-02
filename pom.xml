@@ -44,25 +44,12 @@
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
 
-		<!-- Spring Boot Starter Test (bao gồm các dependencies cho testing) -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+      <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 
-		<!-- <dependency>
-			<groupId>org.bonitasoft.engine</groupId>
-			<artifactId>bonita-client</artifactId>
-			<version>7.13.3</version> <!-- Thay version phù hợp với phiên bản Bonita Engine của bạn -->
-		</dependency>
-
-		<dependency>
-			<groupId>com.company</groupId>
-			<artifactId>simet-bdm-model</artifactId>
-			<version>0.0.1</version>
-			<scope>provided</scope>
-		</dependency> -->
 	</dependencies>
 
 
@@ -76,5 +63,9 @@
 	</build>
 
 </project>
+
+
+
+
 
 
